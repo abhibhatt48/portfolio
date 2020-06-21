@@ -43,6 +43,7 @@
   }
 
 body{
+    padding: 0;
     background-color:#000;
     color: #808080;
     letter-spacing: 0.1rem;
