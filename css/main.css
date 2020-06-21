@@ -338,51 +338,14 @@ dl {
               width: 100%;
             }
           }
-
-          .ml4 {
-            position: relative;
-            font-weight: 100;
-            font-size: 2.5em;
-            margin-top: 300px;
-            padding-bottom: 100px;
+.container-3{
+  padding-top: 150px;
+   margin-bottom: 250px;
+}
+          .ml3 {
+            font-weight: 900;
+            font-size: 3.5em;
           }
-          .ml4 .letters {
-           
-            position:absolute;
-            left: 0;
-            top: 0.3em;
-            right: 0;
-            opacity: 0; 
-            
-            padding-bottom: 300px;
-          }
-          .container-3{
-            margin-bottom: 190px;
-            
-          }
-          .letters-1{
-            
-            font-family: "CustomFont";
-          }
-          .letters-2{
-            font-family: "CustomFont";
-          }
-          .letters-3{
-            font-family: "CustomFont";
-          }
-          .letters-1:hover{
-
-          color: #CB4335 ;
-          }
-
-          .letters-2:hover{
-
-            color: #0E6655  ;
-            }
-            .letters-3:hover{
-
-              color: #D4AC0D ;
-              }
     
 
 
