@@ -360,8 +360,19 @@ dl {
           margin-left: 15px;
           margin-right: 15px;
         }
-    
+        @media only screen and (max-width:  786px){
+          .col-sm-5{
 
+            height: 480;
+          }
+        }
+        @media only screen and (max-width:  480px)
+        {
+          .col-sm-5{
+
+            height: 370px;
+          }
+        }
 
 
 
