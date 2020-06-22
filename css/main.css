@@ -1,10 +1,5 @@
 
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
 
   h1:hover{
     color:#CB4335 ;
@@ -347,6 +342,20 @@ dl {
             font-weight: 900;
             font-size: 3.5em;
           }
+          @media only screen and (max-width:  480px){         
+          .fa-twitter{
+            margin-left: -120px;
+          }
+          .fa-facebook{
+            margin-left: -60px;
+          }
+          .fa-envelope{
+            margin-left: 60px;
+          }
+          .fa-instagram{
+            margin-left: 20px;
+          }
+        }
     
 
 
