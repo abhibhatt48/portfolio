@@ -1,9 +1,9 @@
 
+* {
+  box-sizing: border-box;
+}
 
 
-  h1:hover{
-    color:#CB4335 ;
-  }
 
   img:hover {
     -webkit-transform: scaleX(-1);
@@ -44,7 +44,7 @@ body{
     letter-spacing: 0.1rem;
     margin: 0;
     height: 100%;
-    font-family:"CustomFont" ;
+    font-family:"solaire" ;
 
 }
 .container{
@@ -172,37 +172,6 @@ dl {
         }
         
       }
-      @media screen and (max-width: 480px) {
-        .icon-bar{
-          width: 30%;
-        }
-      }
-
-      .icon-bar {
-        width: 100%;
-        background-color:black;
-        overflow: auto;
-        margin-bottom: 15px;
-        
-        
-      }
-      .icon-bar a {
-        float: left;
-        width: 15%;
-        text-align: center;
-        padding: 2px 0;
-        transition: all 0.3s ease;
-        color: white;
-        font-size: 36px;
-        position:center;
-        margin:0px;
-      }
-     
-      .icon-bar a:hover {
-        background-color: #000;
-        color:cornflowerblue;
-        font-size: 50px;
-      }
       .icon-bar-2 a{
         
         float: left;
@@ -219,6 +188,13 @@ dl {
         background-color:black;
         color:cornflowerblue;
         font-size: 50px;
+      }
+      @media screen and (max-width: 480px){
+        .icon-bar-2 a:hover {
+          background-color:black;
+          color:cornflowerblue;
+          font-size: 30px;
+        }
       }
       
       .owl-carousel {
@@ -269,7 +245,6 @@ dl {
           max-width: 300px;
           margin: auto;
           text-align: center;
-          font-family:"CustomFont";
           margin-bottom: auto;
           margin-top: 90px; 
           background-color: rgb(37, 32, 32);
@@ -335,9 +310,36 @@ dl {
             }
           }
 .container-3{
-  padding-top: 150px;
-   margin-bottom: 200px;
+   padding-top: 0px;
+   position: relative;
+   right: 0;
+   bottom: 0;
+   background-size: contain;
+   
+   
+  
 }
+#myVideo {
+  min-width: 100%; 
+  min-height: 100%;
+}
+@media only screen and (max-width:  480px){
+  #myVideo {
+    max-width: 60%; 
+    min-height: 120%;
+  }
+  .container-3{
+    padding-top: 0px;
+    position: relative;
+   size: 320px;
+    background-size: contain;
+ }
+
+}
+.ftco-section {
+  margin-top: 0px;
+}
+
           .ml3 {
             font-weight: 900;
             font-size: 3.5em;
@@ -374,7 +376,14 @@ dl {
           }
         }
 
-
-
+        .content {
+          position: fixed;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          color: #f1f1f1;
+          width: 100%;
+          padding: 20px;
+        }
+      
 
         
