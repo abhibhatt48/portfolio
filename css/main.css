@@ -365,25 +365,17 @@ dl {
         @media only screen and (max-width:  786px){
           .col-sm-5{
 
-            height: 480;
+            height: 370;
           }
         }
         @media only screen and (max-width:  480px)
         {
-          .col-sm-5{
+          .col-sm-5.img{
 
             height: 370px;
           }
         }
 
-        .content {
-          position: fixed;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.5);
-          color: #f1f1f1;
-          width: 100%;
-          padding: 20px;
-        }
       
 
         
