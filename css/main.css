@@ -60,6 +60,9 @@ html{
     scroll-behavior: smooth;
     height: 100%;
 }
+h1{
+  color: #093758;
+}
 
 
 .header-menu{
