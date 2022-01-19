@@ -376,7 +376,58 @@ dl {
 
             height: 370px;
           }
+        }  
+        .words {
+          color: #707070;
+          
+          line-height: 1.5;
+          text-align: center;
+         
+        
         }
+        
+        .words span {
+          font-size: 4rem;
+          display: inline-block;
+          animation: move 3s ease-in-out infinite;
+        }
+        
+        @keyframes move {
+          0% {
+            transform: translate(-30%, 0);
+          }
+          50% {
+            text-shadow: 0 25px 50px #093758;
+          }
+          100% {
+            transform: translate(30%, 0);
+          }
+        }
+        
+        .words span:nth-child(2) {
+          animation-delay: 0.5s;
+        }
+        
+        .words span:nth-child(3) {
+          animation-delay: 1s;
+        }
+        
+        .words span:nth-child(4) {
+          animation-delay: 1.5s;
+        }
+        
+        .words span:nth-child(5) {
+          animation-delay: 2s;
+        }
+        
+        .words span:nth-child(6) {
+          animation-delay: 2.5s;
+        }
+        
+        .words span:nth-child(7) {
+          animation-delay: 3s;
+        }
+        
 
       
 
