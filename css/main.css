@@ -387,7 +387,7 @@ dl {
         }
         
         .words span {
-          font-size: 4rem;
+          font-size: 3.3rem;
           display: inline-block;
           animation: move 3s ease-in-out infinite;
         }
@@ -396,8 +396,8 @@ dl {
           0% {
             transform: translate(-30%, 0);
           }
-          50% {
-            text-shadow: 0 25px 50px #093758;
+          70% {
+            text-shadow: 0 25px 50px #ee0b0b;
           }
           100% {
             transform: translate(30%, 0);
