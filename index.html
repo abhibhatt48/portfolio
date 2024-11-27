@@ -11,7 +11,57 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-  <div id="particles-js"></div>
+  
+  <div id="bg-wrap">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <!-- Gradient 1: Light Subtle Red -->
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="50s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 153, 153, 0.4)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 0, 0, 0)"></stop>
+        </radialGradient>
+  
+        <!-- Gradient 2: Slightly Deeper Red -->
+        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="60s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 102, 102, 0.3)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 0, 0, 0)"></stop>
+        </radialGradient>
+  
+        <!-- Gradient 3: Light Soft Red -->
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="70s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 77, 77, 0.2)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 0, 0, 0)"></stop>
+        </radialGradient>
+      </defs>
+  
+      <!-- First Rectangle: Light Subtle Red -->
+      <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)">
+        <animate attributeName="x" dur="40s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="50s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="90s" repeatCount="indefinite"></animateTransform>
+      </rect>
+  
+      <!-- Second Rectangle: Slightly Deeper Red -->
+      <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)">
+        <animate attributeName="x" dur="60s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="70s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="100s" repeatCount="indefinite"></animateTransform>
+      </rect>
+  
+      <!-- Third Rectangle: Light Soft Red -->
+      <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)">
+        <animate attributeName="x" dur="80s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="90s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="110s" repeatCount="indefinite"></animateTransform>
+      </rect>
+    </svg>
+  </div>
+  
+    
+
   <header class="header-menu">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #152226;">
         <a class="navbar-brand" href="#">
@@ -170,14 +220,14 @@
     </div>
 
     <footer class="footer">
-        <div class="container text-center">
-            <a href="https://twitter.com/48_abhi?s=09"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/abhishek.bhatt.336717"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/abhi__48/"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:bhattabhishek499@gmail.com"><i class="fas fa-envelope"></i></a>
-            <p>Made with <i class="fas fa-heart"></i> by Abhishek</p>
-        </div>
-    </footer>
+      <div class="container text-center">
+          <a href="https://www.facebook.com/abhishek.bhatt.336717" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/abhi__48/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:bhattabhishek499@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-bhatt-556100154/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <p>Made with <i class="fas fa-heart"></i> by Abhishek</p>
+      </div>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

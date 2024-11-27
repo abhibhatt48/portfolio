@@ -10,6 +10,57 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
+
+  <div id="bg-wrap">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <!-- Gradient 1: Light Subtle Red -->
+        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="50s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 153, 153, 0.4)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 0, 0, 0)"></stop>
+        </radialGradient>
+  
+        <!-- Gradient 2: Slightly Deeper Red -->
+        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="60s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 102, 102, 0.3)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 0, 0, 0)"></stop>
+        </radialGradient>
+  
+        <!-- Gradient 3: Light Soft Red -->
+        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5">
+          <animate attributeName="fx" dur="70s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+          <stop offset="0%" stop-color="rgba(255, 77, 77, 0.2)"></stop>
+          <stop offset="100%" stop-color="rgba(0, 0, 0, 0)"></stop>
+        </radialGradient>
+      </defs>
+  
+      <!-- First Rectangle: Light Subtle Red -->
+      <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)">
+        <animate attributeName="x" dur="40s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="50s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="90s" repeatCount="indefinite"></animateTransform>
+      </rect>
+  
+      <!-- Second Rectangle: Slightly Deeper Red -->
+      <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)">
+        <animate attributeName="x" dur="60s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="70s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="100s" repeatCount="indefinite"></animateTransform>
+      </rect>
+  
+      <!-- Third Rectangle: Light Soft Red -->
+      <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)">
+        <animate attributeName="x" dur="80s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animate attributeName="y" dur="90s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="110s" repeatCount="indefinite"></animateTransform>
+      </rect>
+    </svg>
+  </div>
+  
+    
+
     <header class="header-menu">
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #152226;">
             <a class="navbar-brand" href="#">
@@ -39,19 +90,22 @@
             <div class="col-md-4">
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name 1</h3>
+                        <h3>CreatorConnect</h3>
                     </div>
                     <div class="project-card-body">
-                        <h4>Technologies Used</h4>
+                        <h4>Tech-Stack</h4>
                         <div class="tech-icons">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js-square" title="JavaScript"></i>
+                          <i class="fab fa-java" title="Java"></i>
+                          <i class="fas fa-database" title="SQL"></i>
+                          <i class="fab fa-react" title="React"></i>  
+                          <i class="fas fa-cloud" title="REST API"></i>
+                          <i class="fab fa-github" title="GitHub"></i>
+                          <i class="fas fa-drafting-compass" title="Figma"></i>
                         </div>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum.</p>
+                        <p class="project-description">CreatorConnect is a dynamic platform built to bridge the gap between creators and collaborators. It provides a centralized space for networking, showcasing portfolios, and finding like-minded individuals to bring creative projects to life.</p>
                     </div>
                     <div class="project-card-footer">
-                        <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+                        <a href="https://github.com/abhibhatt48/CreatorConnect" target="_blank" class="github-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
@@ -62,19 +116,21 @@
               <div class="col-md-4">
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name 2</h3>
+                        <h3>Tripn'Go</h3>
                     </div>
                     <div class="project-card-body">
-                        <h4>Technologies Used</h4>
+                        <h4>Tech-Stack</h4>
                         <div class="tech-icons">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js-square" title="JavaScript"></i>
+                          <i class="fab fa-react" title="React"></i>
+                          <i class="fab fa-node-js" title="Node.js"></i>
+                          <i class="fas fa-cloud" title="REST API"></i>
+                          <i class="fas fa-code" title="TypeScript"></i>
+                          <i class="fas fa-layer-group" title="Next.js"></i>
                         </div>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum.</p>
+                        <p class="project-description">TripnGo is a user-friendly travel planning platform designed to simplify itinerary creation. It offers real-time recommendations for destinations, accommodations, and activities, tailored to individual preferences, ensuring a seamless and personalized travel experience.</p>
                     </div>
                     <div class="project-card-footer">
-                        <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+                        <a href="https://github.com/abhibhatt48/TripnGo" target="_blank" class="github-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
@@ -85,19 +141,22 @@
               <div class="col-md-4">
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name 3</h3>
+                        <h3>Dal Hours</h3>
                     </div>
                     <div class="project-card-body">
-                        <h4>Technologies Used</h4>
+                        <h4>Tech-Stack</h4>
                         <div class="tech-icons">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js-square" title="JavaScript"></i>
+                          <i class="fab fa-node-js" title="Node.js"></i>
+                          <i class="fab fa-java" title="Java"></i>
+                          <i class="fas fa-cloud" title="REST API"></i>
+                          <i class="fas fa-code" title="TypeScript"></i>
+                          <i class="fab fa-aws" title="AWS"></i>
+                          <i class="fab fa-github" title="GitHub"></i>
                         </div>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum.</p>
+                        <p class="project-description">Dal Hours is a productivity-focused scheduling tool for Dalhousie University students. It streamlines time management by offering customizable class schedules, study session planning, and reminders, ensuring students can maximize their academic efficiency.</p>
                     </div>
                     <div class="project-card-footer">
-                        <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+                        <a href="https://github.com/abhibhatt48/DalHours" target="_blank" class="github-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
@@ -108,19 +167,22 @@
               <div class="col-md-4">
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name 4</h3>
+                        <h3>PetHome</h3>
                     </div>
                     <div class="project-card-body">
-                        <h4>Technologies Used</h4>
+                        <h4>Tech-Stack</h4>
                         <div class="tech-icons">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js-square" title="JavaScript"></i>
+                          <i class="fab fa-aws" title="AWS"></i>
+                          <i class="fab fa-docker" title="Docker"></i>
+                          <i class="fab fa-node-js" title="Node.js"></i>
+                          <i class="fas fa-cloud" title="REST API"></i>
+                          <i class="fab fa-js-square" title="JavaScript"></i>
+                          <i class="fab fa-react" title="React"></i>
                         </div>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum.</p>
+                        <p class="project-description">PetHome is a one-stop platform for adopting pets, accessing pet care services, and finding pet-friendly rental houses and daycare. From grooming and veterinary care to adoption support and community forums, PetHome ensures a happy and healthy life for pets and their owners.</p>
                     </div>
                     <div class="project-card-footer">
-                        <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+                        <a href="https://github.com/abhibhatt48/PetHome" target="_blank" class="github-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
@@ -131,19 +193,21 @@
               <div class="col-md-4">
                 <div class="project-card">
                     <div class="project-card-header">
-                        <h3>Project Name 5</h3>
+                        <h3>RestReserved</h3>
                     </div>
                     <div class="project-card-body">
-                        <h4>Technologies Used</h4>
+                        <h4>Tech-Stack</h4>
                         <div class="tech-icons">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js-square" title="JavaScript"></i>
+                          <i class="fab fa-google" title="Google Cloud Platform (GCP)"></i>
+                          <i class="fas fa-network-wired" title="Kubernetes"></i>
+                          <i class="fab fa-github" title="GitHub"></i>
+                          <i class="fab fa-python" title="Python"></i>
+                          <i class="fab fa-react" title="React"></i>
                         </div>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum.</p>
+                        <p class="project-description">RestReserved is a smart restaurant reservation app that lets users book tables, pre-select menus, and explore detailed information about restaurants. With additional services like personalized dining recommendations, exclusive offers, and real-time updates, DineEasy ensures a seamless dining experience.</p>
                     </div>
                     <div class="project-card-footer">
-                        <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+                        <a href="https://github.com/abhibhatt48/RestReserved" target="_blank" class="github-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
@@ -154,16 +218,16 @@
                 <div class="col-md-4">
                   <div class="project-card">
                       <div class="project-card-header">
-                          <h3>Project Name 6</h3>
+                          <h3>StoryHeatViz</h3>
                       </div>
                       <div class="project-card-body">
-                          <h4>Technologies Used</h4>
+                          <h4>Tech-Stack</h4>
                           <div class="tech-icons">
-                              <i class="fab fa-html5" title="HTML5"></i>
-                              <i class="fab fa-css3-alt" title="CSS3"></i>
-                              <i class="fab fa-js-square" title="JavaScript"></i>
+                            <i class="fas fa-gamepad" title="Unity"></i>
+                            <i class="fas fa-code" title="C#"></i>
+                            <i class="fas fa-chart-bar" title="D3.js"></i>
                           </div>
-                          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum.</p>
+                          <p class="project-description">StoryHeatViz is an interactive simulation-based game where users explore and visualize data in innovative ways. By interacting with both partial and collected datasets, players uncover insights, patterns, and trends through dynamic heatmaps and engaging visual storytelling techniques. Perfect for data enthusiasts and casual users alike!</p>
                       </div>
                       <div class="project-card-footer">
                           <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
@@ -179,14 +243,14 @@
     </div>
 
     <footer class="footer">
-        <div class="container text-center">
-            <a href="https://twitter.com/48_abhi?s=09"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/abhishek.bhatt.336717"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/abhi__48/"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:bhattabhishek499@gmail.com"><i class="fas fa-envelope"></i></a>
-            <p>Made with <i class="fas fa-heart"></i> by Abhishek</p>
-        </div>
-    </footer>
+      <div class="container text-center">
+          <a href="https://www.facebook.com/abhishek.bhatt.336717" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/abhi__48/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:bhattabhishek499@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-bhatt-556100154/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <p>Made with <i class="fas fa-heart"></i> by Abhishek</p>
+      </div>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

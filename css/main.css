@@ -1,16 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Nunito:wght@400;500&display=swap');
+
 * {
   box-sizing: border-box;
-}
-
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1; /* Ensure it stays behind other elements */
-  background: #121212; /* Fallback dark background color */
 }
 
 
@@ -20,7 +11,24 @@ body {
   color: #808080;
   letter-spacing: 0.1rem;
   margin: 0;
-  font-family: 'Roboto', sans-serif; /* Specify the correct font-family if "solaire" isn't available */
+  font-family: 'Nunito', sans-serif; /* Friendly, rounded font for body */
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif; /* Futuristic headings */
+  letter-spacing: 1px;
+  color: #ff3333;
+}
+
+#bg-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Keeps the background behind the content */
+  background: #121212; /* Dark fallback background */
+  overflow: hidden;
 }
 
 img:hover {
@@ -75,8 +83,43 @@ html {
   background-color: transparent; 
 }
 
-.navbar-nav {
-  height: 100%; /* Align nav items to the height of the navbar */
+/* Navbar container styles */
+.navbar {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font for the navbar */
+  font-size: 1rem; /* Adjust size as needed */
+  letter-spacing: 1px; /* Add spacing for Orbitron */
+  color: #e0e0e0; /* Light text color */
+  background-color: #121212; /* Dark theme background */
+  text-transform: uppercase; /* Ensure all text is uppercase */
+}
+
+/* Navbar links */
+.navbar a {
+  font-family: 'Nunito', sans-serif; /* Rounded, readable font for links */
+  font-size: 0.95rem;
+  color: #ff6666; /* Highlight color for links */
+  text-decoration: none; /* Remove underline */
+  margin: 0 10px; /* Space between links */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a i {
+  margin-right: 5px; /* Add space between icon and text */
+  font-size: 1.2rem; /* Adjust icon size */
+  vertical-align: middle; /* Align icon with text */
+}
+
+.navbar a:hover {
+  color: #ffffff; /* Highlight link on hover */
+}
+
+/* Optional: Navbar logo styling */
+.navbar .logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #ff4d4d; /* Logo color */
+  text-transform: uppercase;
+  margin-right: auto; /* Push logo to the left */
 }
 
 .nav-item {
@@ -131,7 +174,7 @@ html {
   display: flex; /* Enable flexbox */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 50vh; /* Make the container take full viewport height */
+  height: 70vh; /* Make the container take full viewport height */
   text-align: center; /* Center-align text inside the container */
   flex-direction: column; /* Ensure content stacks vertically if needed */
 }
@@ -345,25 +388,137 @@ html {
 }
 
 @media (max-width: 768px) {
-  .navbar-toggler {
-      margin-right: 10px;
+  /* Navbar adjustments */
+  .navbar {
+    padding: 5px 10px;
+    height: auto; /* Allow navbar height to adjust for small screens */
+    flex-wrap: wrap; /* Wrap navbar items */
   }
+  
+  .navbar-brand {
+    margin-bottom: 10px; /* Add space for better alignment */
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Stack navbar items */
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin-bottom: 10px; /* Add spacing between links */
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 20px; /* Consistent padding */
+    text-align: center; /* Center-align content */
+  }
+
   .about-section h1 {
-    font-size: 28px; /* Adjust heading size on smaller screens */
+    font-size: 24px; /* Adjust heading size */
+    margin-bottom: 15px;
+  }
+
+  .about-section img {
+    width: 150px; /* Smaller size for image */
+    max-height: 150px; /* Maintain proper aspect ratio */
+    margin: 0 auto 15px;
+  }
+
+  .about-section p {
+    font-size: 14px; /* Smaller font size for readability */
+    line-height: 1.5;
+  }
+
+  /* Skills Section */
+  .skills-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .skills-list {
+    gap: 15px; /* Adjust gap between skill items */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 100px; /* Smaller skill boxes */
+    height: 100px;
+  }
+
+  .skill-item i {
+    font-size: 1.5rem;
+  }
+
+  .skill-item span {
+    font-size: 0.8rem;
+  }
+
+  /* Project Cards */
+  .project-card {
+    margin: 15px auto; /* Center and add space between cards */
+    width: 90%; /* Adjust card width for small screens */
+  }
+
+  .project-card-header h3 {
+    font-size: 1.2rem; /* Smaller font size for headings */
+  }
+
+  .project-card-body {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .project-card-body h4 {
+    font-size: 1rem; /* Smaller heading size */
+  }
+
+  .project-card-body .project-description {
+    font-size: 0.8rem;
+    line-height: 1.4; /* Adjust line spacing */
+  }
+
+  .project-card-footer .github-link {
+    font-size: 0.9rem; /* Adjust button size */
+    padding: 8px 10px; /* Smaller padding */
+  }
+
+  /* Footer */
+  .footer {
+    padding: 10px 15px; /* Smaller padding for footer */
+    font-size: 12px;
+  }
+
+  .footer i {
+    font-size: 18px; /* Smaller icon size */
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
 }
 
-.about-section .row {
-  display: block;
-}
+@media (max-width: 576px) {
+  .skills-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
 
-.about-section img {
-  display: block;
-  margin: 0 auto 20px; /* Center image on smaller screens */
-  max-width: 100%; /* Full width on smaller devices */
-  height: auto; /* Maintain aspect ratio */
-}
+  .skills-list {
+    gap: 10px; /* Reduce the gap between skill items */
+  }
 
-.about-section .col-md-8 {
-  text-align: center; /* Center text on small screens */
-}
+  .skill-item {
+    width: 75px; /* Further reduce width */
+    height: 75px; /* Further reduce height */
+    font-size: 0.8rem; /* Adjust font size */
+  }
+
+  .skill-item i {
+    font-size: 1.2rem; /* Smaller icons */
+  }
+
+  .skill-item span {
+    font-size: 0.7rem; /* Smaller text */
+  }
 }
